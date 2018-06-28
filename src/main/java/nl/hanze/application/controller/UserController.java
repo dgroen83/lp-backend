@@ -92,6 +92,13 @@ public class UserController {
         }
     }
 
+
+    @RequestMapping(value = "/finsd")
+    public String find(
+            @RequestParam(value = "user") String name) {
+        return "Hello " + name + " heroku is working";
+    }
+
 }
 
 
